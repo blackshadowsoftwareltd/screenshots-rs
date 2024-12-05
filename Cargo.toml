@@ -7,3 +7,8 @@ edition = "2021"
 
 [dependencies]
 screenshots = "0.8"
+image = "0.25"
+
+[target.'cfg(target_os = "macos")'.dependencies]
+core-graphics = "0.24"
+anyhow = "1.0"
